@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruben Melikyan | Code Review</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="name">Ruben Melikyan</div>
+        <div class="tag">B.S. Computer Science • CS 499 ePortfolio</div>
+      </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="chip" href="index.html">Home</a>
+        <a class="chip" href="self-assessment.html">Self-Assessment</a>
+        <a class="chip" href="code-review.html">Code Review</a>
+        <a class="chip" href="artifacts.html">Artifacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card card-pad">
+        <h1>Informal Code Review</h1>
+        <p class="small">
+          This video provides a walkthrough of my original artifact, an analysis of improvement areas, and the enhancement plan
+          across software design and engineering, algorithms and data structures, and databases.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Video</h2>
+        <div style="position: relative; padding-top: 56.25%; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.03);">
+          <iframe
+            src="https://https://www.youtube.com/watch?v=bGVjsnmKDi8"
+            title="CS 499 Code Review Video"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <p class="small" style="margin-top: 12px;">
+          <a href="https://www.youtube.com/watch?v=bGVjsnmKDi8" target="_blank" rel="noopener noreferrer">
+            Open Code Review Video on YouTube
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid-3">
+        <div class="card card-pad">
+          <h2>Existing Functionality</h2>
+          <p class="small">
+            I explain what the dashboard does, how the data flows from MongoDB to the UI, and how users filter, select,
+            map, and visualize animal records.
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Code Analysis</h2>
+          <p class="small">
+            I identify improvement areas such as structure and modularity, error handling, data validation, algorithm efficiency,
+            and security risks (for example, credential handling and defensive query building).
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Enhancement Plan</h2>
+          <p class="small">
+            I outline planned improvements aligned to the three categories: improved software engineering practices, stronger
+            algorithms/data processing, and more secure/robust database integration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Artifact Context</h2>
+        <p class="small">
+          Primary artifact used: CS 340 Grazioso Salvare dashboard + MongoDB CRUD module. The purpose of the code review is to
+          show how the original artifact worked and how the enhancements were selected to better demonstrate professional standards.
+        </p>
+        <p class="small">
+          Next: visit the <a href="artifacts.html">Artifacts</a> page to view original vs enhanced code and narratives.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Ruben Melikyan • CS 499 ePortfolio</div>
+      <div class="small">
+        <a href="index.html">Home</a> • <a href="artifacts.html">Artifacts</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
