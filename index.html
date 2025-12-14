@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruben | CS 499 ePortfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+ 
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="name">Ruben</div>
+        <div class="tag">B.S. Computer Science • CS 499 ePortfolio</div>
+      </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="chip" href="index.html">Home</a>
+        <a class="chip" href="self-assessment.html">Self-Assessment</a>
+        <a class="chip" href="code-review.html">Code Review</a>
+        <a class="chip" href="artifacts.html">Artifacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card card-pad">
+          <h1>Hi, I’m Ruben — an aspiring full-stack / backend developer.</h1>
+          <p>
+            This ePortfolio was created for CS 499 and showcases my growth across software engineering,
+            algorithms & data structures, and databases. The featured work is an enhanced CS 340
+            dashboard project that connects to MongoDB and supports search/filtering, mapping,
+            and data visualization.
+          </p>
+          <p>
+            My focus is building reliable, maintainable applications with clear architecture, efficient data
+            processing, and secure database practices. The pages in this site include a professional self-assessment,
+            an informal code review video, and before/after artifacts with narratives.
+          </p>
+
+          <div class="badges" aria-label="Skill highlights">
+            <span class="badge">Python</span>
+            <span class="badge">Dash / Plotly</span>
+            <span class="badge">MongoDB</span>
+            <span class="badge">CRUD & API Design</span>
+            <span class="badge">Data Cleaning</span>
+            <span class="badge">Secure Practices</span>
+          </div>
+        </div>
+
+        <aside class="card card-pad">
+          <h2>Quick Info</h2>
+          <div class="kv" role="list">
+            <div class="row" role="listitem">
+              <div class="k">Program</div>
+              <div class="v">B.S. Computer Science</div>
+            </div>
+            <div class="row" role="listitem">
+              <div class="k">Capstone</div>
+              <div class="v">CS 499</div>
+            </div>
+            <div class="row" role="listitem">
+              <div class="k">Primary Artifact</div>
+              <div class="v">CS 340 Dashboard</div>
+            </div>
+            <div class="row" role="listitem">
+              <div class="k">Interests</div>
+              <div class="v">Full-Stack, Backend</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="grid-3">
+        <div class="card card-pad">
+          <h2>Professional Self-Assessment</h2>
+          <p class="small">
+            A holistic reflection on my growth across the program, including collaboration, communication,
+            algorithms, software engineering, databases, and security mindset.
+          </p>
+          <p><a href="self-assessment.html">Read the self-assessment →</a></p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Code Review Video</h2>
+          <p class="small">
+            An informal walkthrough of existing functionality, analysis, and planned enhancements across the
+            three categories.
+          </p>
+          <p><a href="code-review.html">Watch the code review →</a></p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Artifacts & Narratives</h2>
+          <p class="small">
+            Before/after artifacts with narratives that explain why each artifact belongs in my ePortfolio,
+            what skills I demonstrated, and which outcomes were met.
+          </p>
+          <p><a href="artifacts.html">Explore artifacts →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Ruben • CS 499 ePortfolio</div>
+      <div class="small">
+        <span>Built with GitHub Pages • </span>
+        <a href="artifacts.html">Artifacts</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
