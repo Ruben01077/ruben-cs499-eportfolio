@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruben Melikyan | Algorithms & Data Structures Artifact</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="name">Ruben Melikyan</div>
+        <div class="tag">B.S. Computer Science • CS 499 ePortfolio</div>
+      </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="chip" href="../index.html">Home</a>
+        <a class="chip" href="../self-assessment.html">Self-Assessment</a>
+        <a class="chip" href="../code-review.html">Code Review</a>
+        <a class="chip" href="../artifacts.html">Artifacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card card-pad">
+        <h1>Algorithms & Data Structures</h1>
+        <p class="small">
+          This artifact demonstrates how I designed and evaluated computing solutions using algorithmic principles, with a focus on
+          efficient filtering, data preparation, and meaningful visualization logic.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Artifact Overview</h2>
+        <p class="small">
+          <strong>Artifact:</strong> CS 340 Grazioso Salvare Dashboard (Python/Dash + MongoDB data)<br/>
+          <strong>Originally Created:</strong> CS 340 (Advanced Programming Concepts)<br/>
+          <strong>Category:</strong> Algorithms and Data Structures
+        </p>
+
+        <p>
+          The dashboard loads animal shelter data and allows users to apply rescue-type filters, select records, view mapped coordinates,
+          and explore a pie chart visualization. For this enhancement, I focused on the algorithmic logic used to build filter queries,
+          process datasets, and generate charts in a way that is both efficient and reliable for real-world usage.
+        </p>
+      </div>
+    </section>
+
+   
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Why This Artifact Belongs in My ePortfolio</h2>
+        <p>
+          I selected this artifact for the algorithms and data structures category because it highlights how algorithmic decisions affect
+          an application's performance and correctness. The dashboard is data-driven, which makes it ideal for demonstrating filtering logic,
+          defensive programming for edge cases, and efficiency considerations when transforming data for visualization. These are practical
+          algorithm skills that apply directly to backend and full-stack development.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid-3">
+        <div class="card card-pad">
+          <h2>Original Limitations</h2>
+          <p class="small">
+            The original version handled filtering and display correctly but did not fully emphasize algorithmic clarity and robustness.
+            Limitations included: (1) inconsistent handling of empty results, (2) limited defensive checks before running transformations,
+            (3) visualization logic that could produce unclear results when categories were large, and (4) less explicit separation of query
+            building versus display logic, which made future extensions harder.
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Enhancements Implemented</h2>
+          <p class="small">
+            For this enhancement, I improved the algorithmic flow by: (1) implementing a clear query-building function that maps each rescue
+            selection to explicit constraints, (2) adding defensive handling when datasets are empty or missing required columns,
+            (3) improving the data transformation logic used before visualization (filtering, removing nulls, selecting meaningful categories),
+            and (4) ensuring the map and chart updates remain stable regardless of user selection.
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Impact of Changes</h2>
+          <p class="small">
+            These improvements make the dashboard more reliable and consistent. Filtering is now easier to understand, evaluate, and extend.
+            The data-processing logic reduces the chance of runtime errors, improves chart accuracy, and provides better user feedback when
+            no data is available. Overall, the application behaves more predictably and demonstrates stronger problem-solving using algorithmic principles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Course Outcomes Demonstrated</h2>
+        <p class="small">
+          This artifact demonstrates CS 499 outcomes by applying algorithmic reasoning and professional communication:
+        </p>
+
+        <ul class="small">
+          <li><strong>Outcome 3 (Algorithms & Trade-offs):</strong> I designed and evaluated filtering and transformation logic with attention to correctness, efficiency, and maintainability trade-offs.</li>
+          <li><strong>Outcome 2 (Communication):</strong> I improved clarity through structured functions and explanations that make the logic easier for others to follow and review.</li>
+          <li><strong>Outcome 4 (Tools & Practices):</strong> I used Python, pandas, and Dash to implement practical data processing and visualization workflows used in real applications.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Design Trade-offs and Evaluation</h2>
+        <p>
+          In this enhancement, a key trade-off was balancing performance with readability. For example, structuring the rescue filter logic
+          into a dedicated query-building function improves clarity and makes future modifications easier, even if it adds a small amount of
+          abstraction. Similarly, defensive checks for empty datasets add a few extra conditional steps, but they significantly improve stability
+          and user experience. These choices reflect a professional approach: prioritize correctness and maintainability while still keeping the
+          logic efficient for typical dataset sizes.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Original vs Enhanced Files</h2>
+        <p class="small">
+          The following links provide direct access to the dashboard code before and after algorithm-focused enhancements.
+        </p>
+
+        <ul class="small">
+          <li><strong>Original:</strong> <a href="../downloads/original/original.zip">downloads/original/</a></li>
+          <li><strong>Enhanced:</strong> <a href="../downloads/enhanced/enhanced.zip">downloads/enhanced/</a></li>
+        </ul>
+
+        <p class="small">
+          Key file for this category: <code>ProjectTwoDashboard.ipynb</code> (filtering/query logic + data transformation + visualization updates).
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Reflection</h2>
+        <p>
+          Enhancing this artifact helped me understand how important algorithmic structure is in data-driven applications. I learned that the
+          best solution is not only one that works, but one that is consistent, predictable, and easy to evaluate. A major challenge was ensuring
+          the dashboard continued to update correctly when users changed filters or when the dataset contained missing values. By adding defensive
+          handling and improving the data transformation steps, I strengthened the reliability of the application and demonstrated a more professional
+          approach to algorithm design and evaluation.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Ruben Melikyan • CS 499 ePortfolio</div>
+      <div class="small">
+        <a href="../artifacts.html">Artifacts</a> • <a href="../index.html">Home</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
