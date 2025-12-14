@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruben Melikyan | Databases Artifact</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="name">Ruben Melikyan</div>
+        <div class="tag">B.S. Computer Science • CS 499 ePortfolio</div>
+      </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="chip" href="../index.html">Home</a>
+        <a class="chip" href="../self-assessment.html">Self-Assessment</a>
+        <a class="chip" href="../code-review.html">Code Review</a>
+        <a class="chip" href="../artifacts.html">Artifacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card card-pad">
+        <h1>Databases</h1>
+        <p class="small">
+          This artifact demonstrates database expertise through a secure and robust MongoDB CRUD layer that supports a data-driven dashboard.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Artifact Overview</h2>
+        <p class="small">
+          <strong>Artifact:</strong> CS 340 Dashboard + MongoDB CRUD Module (Python)<br/>
+          <strong>Originally Created:</strong> CS 340 (Advanced Programming Concepts)<br/>
+          <strong>Category:</strong> Databases
+        </p>
+
+        <p>
+          This project uses MongoDB as the primary data store for animal shelter records. The dashboard reads documents from the database
+          and presents them in a table, map, and chart view. The database interactions are encapsulated in a dedicated CRUD module
+          (<code>AnimalShelter</code> class), which performs create, read, update, and delete operations against the <code>animals</code>
+          collection. For this enhancement, I focused on improving database access design, reliability, and secure handling of sensitive data.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Why This Artifact Belongs in My ePortfolio</h2>
+        <p>
+          I chose this artifact for the databases category because it reflects a realistic database-backed application pattern used in industry:
+          separating database access into a reusable data-access layer, validating operations, and handling database failures gracefully. Since my
+          career interests include full-stack and backend development, demonstrating strong database skills is essential. This artifact shows how I
+          can design database integration that is reliable, maintainable, and aligned with secure practices.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid-3">
+        <div class="card card-pad">
+          <h2>Original Limitations</h2>
+          <p class="small">
+            The original database layer successfully connected to MongoDB and supported CRUD operations, but it exposed some limitations:
+            (1) Credential handling could be improved to reduce the risk of hard-coded values, (2) returned MongoDB documents included internal fields
+            such as <code>_id</code>, (3) error handling and diagnostics could be more robust, and (4) validation could be strengthened to reduce
+            the chance of invalid queries or updates.
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Enhancements Implemented</h2>
+          <p class="small">
+            For the database enhancement, I improved the CRUD module by: (1) supporting environment variable overrides for credentials to reduce
+            exposure of sensitive information, (2) adding a helper method to clean MongoDB results by removing internal fields like <code>_id</code>,
+            (3) strengthening validation for inputs to CRUD methods, and (4) reinforcing error handling and logging so database issues can be detected,
+            diagnosed, and handled consistently.
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Impact of Changes</h2>
+          <p class="small">
+            These changes improved the database layer’s security and reliability. Credential handling is more secure, results are returned in a cleaner
+            application-friendly format, and defensive programming reduces risk from invalid inputs. The CRUD module is now better structured as a reusable
+            database access component that can be integrated into other applications beyond this dashboard.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Course Outcomes Demonstrated</h2>
+        <p class="small">
+          This artifact supports CS 499 outcomes by demonstrating professional database integration and security-aware design:
+        </p>
+
+        <ul class="small">
+          <li><strong>Outcome 4 (Tools & Practices):</strong> I used MongoDB and PyMongo in a structured CRUD layer, demonstrating well-founded database practices and a maintainable DAO-style design.</li>
+          <li><strong>Outcome 5 (Security Mindset):</strong> I reduced credential exposure with environment variables, validated database operation inputs, and limited leakage of database internals (like <code>_id</code>).</li>
+          <li><strong>Outcome 2 (Communication):</strong> I documented behaviors and failure modes so that database operations are easier to understand and review.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Database Design Notes</h2>
+        <p>
+          A key design decision in this enhancement was to keep database logic encapsulated in one module rather than mixing database code directly
+          into the dashboard UI. This separation of concerns improves maintainability and supports reuse. Cleaning results to remove MongoDB internal
+          fields helps keep the rest of the application database-agnostic. Additionally, supporting environment variables is a practical approach for
+          safer configuration management in real deployments. These improvements demonstrate database design thinking beyond basic CRUD functionality.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Original vs Enhanced Files</h2>
+        <p class="small">
+          The following links provide direct access to the database-related files before and after enhancements.
+        </p>
+
+        <ul class="small">
+          <!-- Update links if your folder names differ -->
+          <li><strong>Original:</strong> <a href="../downloads/original/original.zip">downloads/original/</a></li>
+          <li><strong>Enhanced:</strong> <a href="../downloads/enhanced/enhanced.zip">downloads/enhanced/</a></li>
+        </ul>
+
+        <p class="small">
+          Key file for this category: <code>CRUD_Python_Module.py</code> (AnimalShelter class for MongoDB access).
+          Supporting file: <code>ProjectTwoDashboard.ipynb</code> (uses the CRUD layer to load and display data).
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Reflection</h2>
+        <p>
+          This enhancement strengthened my understanding of database integration as more than simply connecting and running queries. I learned that a
+          professional database layer should validate inputs, handle failures predictably, reduce exposure of sensitive configuration, and return results
+          in a form that supports the rest of the application. One challenge was ensuring changes to database handling did not break the dashboard’s expectations
+          for returned data. By iteratively testing the dashboard and refining the CRUD layer, I improved both reliability and security while maintaining
+          the application’s functionality.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Ruben Melikyan • CS 499 ePortfolio</div>
+      <div class="small">
+        <a href="../artifacts.html">Artifacts</a> • <a href="../index.html">Home</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
