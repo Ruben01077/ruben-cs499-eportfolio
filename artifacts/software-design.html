@@ -1,1 +1,167 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ruben Melikyan| Software Design & Engineering Artifact</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Top Navigation -->
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="name">Ruben Melikyan</div>
+        <div class="tag">B.S. Computer Science • CS 499 ePortfolio</div>
+      </div>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="chip" href="../index.html">Home</a>
+        <a class="chip" href="../self-assessment.html">Self-Assessment</a>
+        <a class="chip" href="../code-review.html">Code Review</a>
+        <a class="chip" href="../artifacts.html">Artifacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card card-pad">
+        <h1>Software Design & Engineering</h1>
+        <p class="small">
+          This artifact demonstrates improvements to structure, maintainability, documentation, and reliability using professional
+          software engineering practices.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Artifact Overview</h2>
+        <p class="small">
+          <strong>Artifact:</strong> CS 340 Grazioso Salvare Dashboard (Python/Dash + MongoDB CRUD module)<br/>
+          <strong>Originally Created:</strong> CS 340 (Advanced Programming Concepts)<br/>
+          <strong>Category:</strong> Software Design and Engineering
+        </p>
+
+        <p>
+          The Grazioso Salvare Dashboard is an interactive application that loads animal shelter records from a MongoDB database and
+          displays them in a searchable table. Users can apply rescue filters, select records, view a mapped location for a chosen
+          animal, and explore basic visualizations (such as breed distribution). The dashboard relies on a separate CRUD module
+          that encapsulates database access and provides create/read/update/delete operations.
+        </p>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Why This Artifact Belongs in My ePortfolio</h2>
+        <p>
+          I selected this artifact because it demonstrates real-world software design challenges that appear in professional development:
+          separating concerns between user interface and database access, designing reusable modules, handling errors gracefully, and writing
+          code that can be maintained and enhanced over time. This project aligns well with my career interests in full-stack and backend
+          development because it represents an application that integrates user-facing behavior with reliable backend services and data handling.
+        </p>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="grid-3">
+        <div class="card card-pad">
+          <h2>Original Limitations</h2>
+          <p class="small">
+            In the original version, parts of the code were functional but not yet written at a professional standard. Main limitations included:
+            (1) limited documentation for methods and expected inputs/outputs, (2) weaker error handling around database operations and connection
+            issues, (3) inconsistent validation of parameters, and (4) reduced maintainability due to unclear structure and minimal logging.
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Enhancements Implemented</h2>
+          <p class="small">
+            For the software design and engineering enhancement, I improved the CRUD module by:
+            (1) adding clearer documentation and type hints to improve readability and maintainability,
+            (2) strengthening error handling for connection and CRUD failures,
+            (3) implementing input validation to prevent invalid operations,
+            and (4) adding basic logging to support debugging and professional-quality diagnostics.
+            These improvements make the module easier to maintain and safer to use in other parts of the application.
+          </p>
+        </div>
+
+        <div class="card card-pad">
+          <h2>Impact of Changes</h2>
+          <p class="small">
+            The enhanced design improves reliability and makes the code easier to extend. Better validation and explicit exceptions reduce
+            unexpected failures. Logging supports faster troubleshooting, and improved structure creates a more professional foundation for
+            future enhancements. Overall, the project is closer to production-quality code and better demonstrates software engineering standards.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Course Outcomes Demonstrated</h2>
+        <p class="small">
+          This artifact supports multiple CS 499 outcomes through professional engineering practices and clear communication:
+        </p>
+
+        <ul class="small">
+          <li><strong>Outcome 2 (Communication):</strong> I improved readability through documentation, consistent structure, and clear method behavior that supports technical review and stakeholder understanding.</li>
+          <li><strong>Outcome 4 (Tools & Practices):</strong> I demonstrated professional engineering practices by improving modular design, applying logging and error handling, and strengthening maintainability of the CRUD layer.</li>
+          <li><strong>Outcome 5 (Security Mindset):</strong> I applied defensive programming via parameter validation and safer database interaction patterns that reduce risk from invalid or unexpected inputs.</li>
+        </ul>
+      </div>
+    </section>
+
+ 
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Original vs Enhanced Files</h2>
+        <p class="small">
+          The following links provide direct access to the code before and after enhancements.
+        </p>
+
+        <ul class="small">
+          
+          <li><strong>Original:</strong> <a href="../downloads/original/original.zip">downloads/original/</a></li>
+          <li><strong>Enhanced:</strong> <a href="../downloads/enhanced/enhanced.zip">downloads/enhanced/</a></li>
+        </ul>
+
+        <p class="small">
+          Key files for this category include <code>CRUD_Python_Module.py</code> and its integration in the dashboard.
+        </p>
+      </div>
+    </section>
+
+  
+    <section class="section">
+      <div class="card card-pad">
+        <h2>Reflection</h2>
+        <p>
+          Enhancing this artifact strengthened my understanding of what “professional-quality code” looks like in practice. I learned that
+          working code is not the same as maintainable code, and that design improvements—such as validation, logging, and clear documentation—
+          make projects easier to scale and safer to modify. A key challenge was ensuring that improvements to the CRUD module remained compatible
+          with the dashboard and did not break existing functionality. Testing and iterative refinement helped confirm that the enhanced structure
+          improved reliability while maintaining the expected behavior of the overall application.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="y"></span> Ruben Melikyan • CS 499 ePortfolio</div>
+      <div class="small">
+        <a href="../artifacts.html">Artifacts</a> • <a href="../index.html">Home</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
